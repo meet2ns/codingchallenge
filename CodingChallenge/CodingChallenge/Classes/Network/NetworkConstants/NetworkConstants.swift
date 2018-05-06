@@ -9,14 +9,11 @@
 import Foundation
 
 struct AppNetworkConstants {
-    static let kBaseURLString                       = "http://159.65.37.92:1337/parse"
+    static let kBaseURLString                       = "http://api.icndb.com/jokes/"
 }
 
 struct AppNetworkEndPoints {
-    static let kUserLogin                = "/login"
-    static let kAddFacility              = "/classes/Facility"
-    static let kUploadFile               = "/files"
-    static let kGetAllFacilities         = "/classes/Facility"
+    static let kGetAllRandomJokes         = "random"
 
 }
 
