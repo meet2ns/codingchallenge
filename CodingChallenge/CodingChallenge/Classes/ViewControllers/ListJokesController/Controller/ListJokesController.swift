@@ -12,14 +12,35 @@ class ListJokesController: UIViewController {
 
     @IBOutlet var listJokesView: ListJokesView!
     
+    var firstName: String!
+    var lastName: String!
+    
+    // MARK: Instance Variables
+    var handler: ListJokesHandler!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        self.configureHandler()
+        self.processRequest()
+        
         self.configureDataSource()
         self.handleSelectedRowCallback()
+        self.configureCallbacks()
     }
 
+    // MARK: Handler
+    private func configureHandler() -> Void{
+        self.handler = ListJokesHandler(viewController: self)
+    }
+    
+    func processRequest() -> Void {
+        self.handler.requestFetchingJokesAPI(firstName: self.firstName, lastName: self.lastName)
+    }
+    
+    
     //MARK: configure DataSource
     func configureDataSource() {
         self.listJokesView.initializeNibsForTableView()
@@ -49,6 +70,27 @@ class ListJokesController: UIViewController {
                 
             }
         }
+    }
+    
+    
+    //MARK: Callbacks
+    func configureCallbacks() {
+        self.handler.didReceiveSuccessCallback = {response in
+            self.handleSuccessfulFetchingJokesFRomAPI(jokesObject: response as! JokesRootResponse)
+        }
+        
+        self.handler.didRecieveErrorCallback = {error in
+            self.handleErrorHandling(error: error)
+        }
+    }
+    
+    func handleSuccessfulFetchingJokesFRomAPI(jokesObject: JokesRootResponse!) {
+        self.stopAnimating()
+    }
+    
+    private func handleErrorHandling(error : Error!) -> Void {
+        // Develop category for NSError
+        AppDelegate.sharedInstance()?.showAlert(title: ApplicationAlertMessages.kAlertTitle, message: error.localizedDescription)
     }
 
 }

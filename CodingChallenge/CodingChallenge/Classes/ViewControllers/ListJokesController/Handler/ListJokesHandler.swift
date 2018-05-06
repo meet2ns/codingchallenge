@@ -60,7 +60,7 @@ class ListJokesHandler: NSObject {
     // MARK: Events
     private func handleSuccessfulAPIRequest(response : AnyObject!) -> Void {
         if self.didReceiveSuccessCallback != nil {
-            self.didReceiveSuccessCallback!(response)
+            self.didReceiveSuccessCallback!(response as! JokesRootResponse)
         }
     }
     

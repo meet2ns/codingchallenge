@@ -22,6 +22,10 @@ class SelectNameController: UIViewController {
     @IBAction func submitTapped(_ sender: Any) {
         if self.selectNameView.validateFieldsData() == true {
             let listJokesController: ListJokesController = ListJokesController(nibName: ApplicationNibStringConstants.kListJokesController, bundle: nil)
+            
+            listJokesController.firstName = self.selectNameView.firstNameField.text
+            listJokesController.lastName = self.selectNameView.lastNameField.text
+            
             self.navigationController?.pushViewController(listJokesController, animated: true)
         }
         else{

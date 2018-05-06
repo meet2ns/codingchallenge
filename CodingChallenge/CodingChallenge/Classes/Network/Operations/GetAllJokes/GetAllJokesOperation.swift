@@ -19,13 +19,13 @@ class GetAllJokesOperation: OnebyteNetworkOperationBase {
     override func start() {
         super.start()
         
-        self.startFetchingAllFacilitiesOperation()
+        self.startFetchingAllJokesOperation()
     }
     
     override func handleDidFinishedWithResponse(response: AnyObject!) {
-//        let facilityBaseObject: RootFacilitiesResponse = RootFacilitiesResponse(json: JSON(response))
-//
-//        self.safeCallDidFinishSuccessfullyCallback(responseObject: facilityBaseObject)
+        let jokesBaseObject: JokesRootResponse = JokesRootResponse(json: JSON(response))
+
+        self.safeCallDidFinishSuccessfullyCallback(responseObject: jokesBaseObject)
         self.handleDidFinishedCommon()
     }
     
@@ -34,7 +34,7 @@ class GetAllJokesOperation: OnebyteNetworkOperationBase {
     }
     
     //MARK: Request
-    private func startFetchingAllFacilitiesOperation() {
+    private func startFetchingAllJokesOperation() {
         
         OnebyteNetworkSessionManager.request(AppNetworkManager.openNetworkRequest(methodType: .get, path: AppNetworkEndPoints.kGetAllRandomJokes, parameters: self.createBody())).responseJSON {response in
             switch response.result {

@@ -48,6 +48,8 @@
 		99B633CE209ED3DD00FE2E9E /* AppNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633C6209ED3DC00FE2E9E /* AppNetworkManager.swift */; };
 		99B633CF209ED3DD00FE2E9E /* OnebyteNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633C8209ED3DC00FE2E9E /* OnebyteNetworkRequest.swift */; };
 		99B633D2209ED5D300FE2E9E /* GetAllJokesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633D1209ED5D300FE2E9E /* GetAllJokesOperation.swift */; };
+		99B633D6209EDD4000FE2E9E /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633D4209EDD4000FE2E9E /* Value.swift */; };
+		99B633D7209EDD4000FE2E9E /* JokesRootResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633D5209EDD4000FE2E9E /* JokesRootResponse.swift */; };
 		B94ADA411AC4F9F25EEB4734 /* Pods_CodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56CC8C4F2D71F8BC0A419DD /* Pods_CodingChallenge.framework */; };
 		C304069D4B66148B4B52F98B /* Pods_CodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B56CB5010458B3F2E185A91 /* Pods_CodingChallengeTests.framework */; };
 /* End PBXBuildFile section */
@@ -121,6 +123,8 @@
 		99B633C6209ED3DC00FE2E9E /* AppNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNetworkManager.swift; sourceTree = "<group>"; };
 		99B633C8209ED3DC00FE2E9E /* OnebyteNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnebyteNetworkRequest.swift; sourceTree = "<group>"; };
 		99B633D1209ED5D300FE2E9E /* GetAllJokesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllJokesOperation.swift; sourceTree = "<group>"; };
+		99B633D4209EDD4000FE2E9E /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		99B633D5209EDD4000FE2E9E /* JokesRootResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokesRootResponse.swift; sourceTree = "<group>"; };
 		A56CC8C4F2D71F8BC0A419DD /* Pods_CodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02D7BCF4B7F1D613798C31D /* Pods-CodingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodingChallengeTests/Pods-CodingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		F203E477B51064E374ABE684 /* Pods-CodingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodingChallengeTests/Pods-CodingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -555,6 +559,7 @@
 		99B633B9209ED3DC00FE2E9E /* ResponseObjects */ = {
 			isa = PBXGroup;
 			children = (
+				99B633D3209EDD4000FE2E9E /* JokesRootResponse */,
 			);
 			path = ResponseObjects;
 			sourceTree = "<group>";
@@ -642,6 +647,15 @@
 				99B633D1209ED5D300FE2E9E /* GetAllJokesOperation.swift */,
 			);
 			path = GetAllJokes;
+			sourceTree = "<group>";
+		};
+		99B633D3209EDD4000FE2E9E /* JokesRootResponse */ = {
+			isa = PBXGroup;
+			children = (
+				99B633D4209EDD4000FE2E9E /* Value.swift */,
+				99B633D5209EDD4000FE2E9E /* JokesRootResponse.swift */,
+			);
+			path = JokesRootResponse;
 			sourceTree = "<group>";
 		};
 		FCBB77989622BD52572C3331 /* Frameworks */ = {
@@ -875,6 +889,8 @@
 				99B633C9209ED3DD00FE2E9E /* NetworkConstants.swift in Sources */,
 				99B633CB209ED3DD00FE2E9E /* OnebyteNetworkOperationQueue.swift in Sources */,
 				99B63393209E40B200FE2E9E /* ApplicationDates.swift in Sources */,
+				99B633D7209EDD4000FE2E9E /* JokesRootResponse.swift in Sources */,
+				99B633D6209EDD4000FE2E9E /* Value.swift in Sources */,
 				99B633AA209ECD5D00FE2E9E /* ListJokesView.swift in Sources */,
 				99B63385209E40B200FE2E9E /* DateFormatter.swift in Sources */,
 				99B63391209E40B200FE2E9E /* ApplicationBarButtonItems.swift in Sources */,
