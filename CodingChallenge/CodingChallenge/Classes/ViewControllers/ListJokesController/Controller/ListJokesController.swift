@@ -27,17 +27,34 @@ class ListJokesController: UIViewController {
         self.processRequest()
         
         self.configureDataSource()
-        self.handleSelectedRowCallback()
         self.configureCallbacks()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        AppDelegate.sharedInstance()?.jokesArray.removeAllObjects()
+    }
+    
     // MARK: Handler
     private func configureHandler() -> Void{
         self.handler = ListJokesHandler(viewController: self)
     }
     
     func processRequest() -> Void {
-        self.handler.requestFetchingJokesAPI(firstName: self.firstName, lastName: self.lastName)
+        
+        for  var i in (0..<10){
+            DispatchQueue.global(qos: .background).async {
+                // Background Thread
+                self.handler.requestFetchingJokesAPI(firstName: self.firstName, lastName: self.lastName)
+
+                DispatchQueue.main.async {
+                    // Run UI Updates
+//                    self.listJokesView.tableView.reloadData()
+                }
+            }
+
+        }
+        
     }
     
     
@@ -58,17 +75,15 @@ class ListJokesController: UIViewController {
     }
     
     
-    func handleSelectedRowCallback() -> Void {
-        self.listJokesView.listJokesDataSource.didReceivedSelectedRowActionCallback = { index in
-            switch index {
-          
-            case 0:
-                break
-                
-            default:
-                break
-                
-            }
+    func handleSelectedRowCallback(index: Int) -> Void {
+        switch index {
+      
+        case 0:
+            break
+            
+        default:
+            break
+            
         }
     }
     
@@ -82,10 +97,16 @@ class ListJokesController: UIViewController {
         self.handler.didRecieveErrorCallback = {error in
             self.handleErrorHandling(error: error)
         }
+        
+        self.listJokesView.listJokesDataSource.didReceivedSelectedRowActionCallback = { index in
+            self.handleSelectedRowCallback(index: index)
+        }
     }
     
     func handleSuccessfulFetchingJokesFRomAPI(jokesObject: JokesRootResponse!) {
         self.stopAnimating()
+        AppDelegate.sharedInstance()?.jokesArray.add(jokesObject)
+        self.listJokesView.tableView.reloadData()
     }
     
     private func handleErrorHandling(error : Error!) -> Void {

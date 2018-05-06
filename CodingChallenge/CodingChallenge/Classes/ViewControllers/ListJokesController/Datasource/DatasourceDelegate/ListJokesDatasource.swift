@@ -27,22 +27,23 @@ class ListJokesDatasource: NSObject, UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        if AppDelegate.sharedInstance()?.jokesArray.count==0 || AppDelegate.sharedInstance()?.jokesArray == nil{
+            return 0
+        }
+        else{
+            return (AppDelegate.sharedInstance()?.jokesArray.count)!
+        }
     }
+    
     //MARK: TableView Cell Generation
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellIdentifier: String = "ListJokesCell"
-        
         let cell : ListJokesCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! ListJokesCell
         cell.selectionStyle = UITableViewCellSelectionStyle.none
         
-        if indexPath.row % 2 == 0{
-            cell.backgroundColor = UIColor.customGreenColor()
-        }
-        else{
-            cell.backgroundColor = UIColor.white
-        }
+        cell.configureJokeDescription(jokeDescription: AppDelegate.sharedInstance()?.jokesArray[indexPath.row] as! JokesRootResponse)
+        
         
         return cell
         
@@ -52,6 +53,10 @@ class ListJokesDatasource: NSObject, UITableViewDataSource, UITableViewDelegate 
         if  let callback = self.didReceivedSelectedRowActionCallback{
             callback(indexPath.row)
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
     
 

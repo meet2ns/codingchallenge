@@ -13,6 +13,8 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    public var jokesArray: NSMutableArray = NSMutableArray()
+
     //MARK: Shared Instance
     class func sharedInstance ()-> AppDelegate?{
         let sharedInstance = {

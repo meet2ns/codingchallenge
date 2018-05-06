@@ -10,6 +10,7 @@ import UIKit
 
 class ListJokesCell: UITableViewCell {
 
+    @IBOutlet weak var jokeDescription: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +20,10 @@ class ListJokesCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configureJokeDescription(jokeDescription: JokesRootResponse) -> Void {
+        self.jokeDescription.text = jokeDescription.value?.joke
     }
     
 }
