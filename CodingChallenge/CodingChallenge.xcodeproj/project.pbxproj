@@ -40,6 +40,13 @@
 		99B633AF209ECD9100FE2E9E /* ListJokesDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633AE209ECD9100FE2E9E /* ListJokesDatasource.swift */; };
 		99B633B3209ECDBB00FE2E9E /* ListJokesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633B1209ECDBB00FE2E9E /* ListJokesCell.swift */; };
 		99B633B4209ECDBB00FE2E9E /* ListJokesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B633B2209ECDBB00FE2E9E /* ListJokesCell.xib */; };
+		99B633C9209ED3DD00FE2E9E /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633B7209ED3DC00FE2E9E /* NetworkConstants.swift */; };
+		99B633CA209ED3DD00FE2E9E /* OnebyteNetworkSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633BE209ED3DC00FE2E9E /* OnebyteNetworkSessionManager.swift */; };
+		99B633CB209ED3DD00FE2E9E /* OnebyteNetworkOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633C1209ED3DC00FE2E9E /* OnebyteNetworkOperationQueue.swift */; };
+		99B633CC209ED3DD00FE2E9E /* OnebyteNetworkOperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633C3209ED3DC00FE2E9E /* OnebyteNetworkOperationBase.swift */; };
+		99B633CD209ED3DD00FE2E9E /* OnebyteNetworkOperationBase+Subclassing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633C4209ED3DC00FE2E9E /* OnebyteNetworkOperationBase+Subclassing.swift */; };
+		99B633CE209ED3DD00FE2E9E /* AppNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633C6209ED3DC00FE2E9E /* AppNetworkManager.swift */; };
+		99B633CF209ED3DD00FE2E9E /* OnebyteNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633C8209ED3DC00FE2E9E /* OnebyteNetworkRequest.swift */; };
 		B94ADA411AC4F9F25EEB4734 /* Pods_CodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56CC8C4F2D71F8BC0A419DD /* Pods_CodingChallenge.framework */; };
 		C304069D4B66148B4B52F98B /* Pods_CodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B56CB5010458B3F2E185A91 /* Pods_CodingChallengeTests.framework */; };
 /* End PBXBuildFile section */
@@ -105,6 +112,13 @@
 		99B633AE209ECD9100FE2E9E /* ListJokesDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJokesDatasource.swift; sourceTree = "<group>"; };
 		99B633B1209ECDBB00FE2E9E /* ListJokesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJokesCell.swift; sourceTree = "<group>"; };
 		99B633B2209ECDBB00FE2E9E /* ListJokesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListJokesCell.xib; sourceTree = "<group>"; };
+		99B633B7209ED3DC00FE2E9E /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		99B633BE209ED3DC00FE2E9E /* OnebyteNetworkSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnebyteNetworkSessionManager.swift; sourceTree = "<group>"; };
+		99B633C1209ED3DC00FE2E9E /* OnebyteNetworkOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnebyteNetworkOperationQueue.swift; sourceTree = "<group>"; };
+		99B633C3209ED3DC00FE2E9E /* OnebyteNetworkOperationBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnebyteNetworkOperationBase.swift; sourceTree = "<group>"; };
+		99B633C4209ED3DC00FE2E9E /* OnebyteNetworkOperationBase+Subclassing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OnebyteNetworkOperationBase+Subclassing.swift"; sourceTree = "<group>"; };
+		99B633C6209ED3DC00FE2E9E /* AppNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNetworkManager.swift; sourceTree = "<group>"; };
+		99B633C8209ED3DC00FE2E9E /* OnebyteNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnebyteNetworkRequest.swift; sourceTree = "<group>"; };
 		A56CC8C4F2D71F8BC0A419DD /* Pods_CodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02D7BCF4B7F1D613798C31D /* Pods-CodingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodingChallengeTests/Pods-CodingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		F203E477B51064E374ABE684 /* Pods-CodingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodingChallengeTests/Pods-CodingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +216,7 @@
 		99B6332D209E3BB600FE2E9E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				99B633B5209ED3DC00FE2E9E /* Network */,
 				99B63346209E40B200FE2E9E /* Helpers */,
 				99B6332E209E3BB600FE2E9E /* Resources */,
 				99B6333B209E3BB600FE2E9E /* ViewControllers */,
@@ -508,6 +523,116 @@
 			path = CustomCells;
 			sourceTree = "<group>";
 		};
+		99B633B5209ED3DC00FE2E9E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				99B633B6209ED3DC00FE2E9E /* NetworkConstants */,
+				99B633B8209ED3DC00FE2E9E /* Operations */,
+				99B633B9209ED3DC00FE2E9E /* ResponseObjects */,
+				99B633BA209ED3DC00FE2E9E /* OnebyteSwiftNetworkCycle */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		99B633B6209ED3DC00FE2E9E /* NetworkConstants */ = {
+			isa = PBXGroup;
+			children = (
+				99B633B7209ED3DC00FE2E9E /* NetworkConstants.swift */,
+			);
+			path = NetworkConstants;
+			sourceTree = "<group>";
+		};
+		99B633B8209ED3DC00FE2E9E /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		99B633B9209ED3DC00FE2E9E /* ResponseObjects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResponseObjects;
+			sourceTree = "<group>";
+		};
+		99B633BA209ED3DC00FE2E9E /* OnebyteSwiftNetworkCycle */ = {
+			isa = PBXGroup;
+			children = (
+				99B633BB209ED3DC00FE2E9E /* Classes */,
+			);
+			path = OnebyteSwiftNetworkCycle;
+			sourceTree = "<group>";
+		};
+		99B633BB209ED3DC00FE2E9E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				99B633BC209ED3DC00FE2E9E /* OnebyteNetwork */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		99B633BC209ED3DC00FE2E9E /* OnebyteNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				99B633BD209ED3DC00FE2E9E /* Managers */,
+				99B633BF209ED3DC00FE2E9E /* Operations */,
+				99B633C5209ED3DC00FE2E9E /* Manager */,
+				99B633C7209ED3DC00FE2E9E /* Request */,
+			);
+			path = OnebyteNetwork;
+			sourceTree = "<group>";
+		};
+		99B633BD209ED3DC00FE2E9E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				99B633BE209ED3DC00FE2E9E /* OnebyteNetworkSessionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		99B633BF209ED3DC00FE2E9E /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				99B633C0209ED3DC00FE2E9E /* Queue */,
+				99B633C2209ED3DC00FE2E9E /* Base */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		99B633C0209ED3DC00FE2E9E /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				99B633C1209ED3DC00FE2E9E /* OnebyteNetworkOperationQueue.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		99B633C2209ED3DC00FE2E9E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				99B633C3209ED3DC00FE2E9E /* OnebyteNetworkOperationBase.swift */,
+				99B633C4209ED3DC00FE2E9E /* OnebyteNetworkOperationBase+Subclassing.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		99B633C5209ED3DC00FE2E9E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				99B633C6209ED3DC00FE2E9E /* AppNetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		99B633C7209ED3DC00FE2E9E /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				99B633C8209ED3DC00FE2E9E /* OnebyteNetworkRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		FCBB77989622BD52572C3331 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -736,6 +861,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B633C9209ED3DD00FE2E9E /* NetworkConstants.swift in Sources */,
+				99B633CB209ED3DD00FE2E9E /* OnebyteNetworkOperationQueue.swift in Sources */,
 				99B63393209E40B200FE2E9E /* ApplicationDates.swift in Sources */,
 				99B633AA209ECD5D00FE2E9E /* ListJokesView.swift in Sources */,
 				99B63385209E40B200FE2E9E /* DateFormatter.swift in Sources */,
@@ -744,19 +871,24 @@
 				99B6338A209E40B200FE2E9E /* NSLayouts.swift in Sources */,
 				99B633AC209ECD6E00FE2E9E /* ListJokesHandler.swift in Sources */,
 				99B63390209E40B200FE2E9E /* ApplicationStrings.swift in Sources */,
+				99B633CA209ED3DD00FE2E9E /* OnebyteNetworkSessionManager.swift in Sources */,
 				99B63386209E40B200FE2E9E /* ApplicationButtons.swift in Sources */,
 				99B633AF209ECD9100FE2E9E /* ListJokesDatasource.swift in Sources */,
 				99B6339C209EC89300FE2E9E /* SelectNameView.swift in Sources */,
 				99B6338E209E40B200FE2E9E /* ApplicationReachability.swift in Sources */,
 				99B633A7209ECD4800FE2E9E /* ListJokesController.swift in Sources */,
 				99B6338C209E40B200FE2E9E /* UIDevice.swift in Sources */,
+				99B633CE209ED3DD00FE2E9E /* AppNetworkManager.swift in Sources */,
 				99B63387209E40B200FE2E9E /* ApplicationColors.swift in Sources */,
 				99B63399209EC87A00FE2E9E /* SelectNameController.swift in Sources */,
 				99B633B3209ECDBB00FE2E9E /* ListJokesCell.swift in Sources */,
 				99B6333F209E3BB600FE2E9E /* CodingChallenge.xcdatamodeld in Sources */,
+				99B633CD209ED3DD00FE2E9E /* OnebyteNetworkOperationBase+Subclassing.swift in Sources */,
 				99B6337D209E40B200FE2E9E /* ApplicationConstants.swift in Sources */,
 				99B63388209E40B200FE2E9E /* NavigationTitleView.swift in Sources */,
+				99B633CC209ED3DD00FE2E9E /* OnebyteNetworkOperationBase.swift in Sources */,
 				99B6339E209ECA0000FE2E9E /* AppNavigation.swift in Sources */,
+				99B633CF209ED3DD00FE2E9E /* OnebyteNetworkRequest.swift in Sources */,
 				99B6338F209E40B200FE2E9E /* NVActivityIndicator.swift in Sources */,
 				99B63389209E40B200FE2E9E /* ApplicationFonts.swift in Sources */,
 			);
