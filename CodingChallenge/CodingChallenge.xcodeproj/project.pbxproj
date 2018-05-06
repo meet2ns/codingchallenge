@@ -29,6 +29,17 @@
 		99B63390209E40B200FE2E9E /* ApplicationStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B63376209E40B200FE2E9E /* ApplicationStrings.swift */; };
 		99B63391209E40B200FE2E9E /* ApplicationBarButtonItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B63378209E40B200FE2E9E /* ApplicationBarButtonItems.swift */; };
 		99B63393209E40B200FE2E9E /* ApplicationDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B6337C209E40B200FE2E9E /* ApplicationDates.swift */; };
+		99B63399209EC87A00FE2E9E /* SelectNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B63397209EC87A00FE2E9E /* SelectNameController.swift */; };
+		99B6339A209EC87A00FE2E9E /* SelectNameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B63398209EC87A00FE2E9E /* SelectNameController.xib */; };
+		99B6339C209EC89300FE2E9E /* SelectNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B6339B209EC89300FE2E9E /* SelectNameView.swift */; };
+		99B6339E209ECA0000FE2E9E /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B6339D209ECA0000FE2E9E /* AppNavigation.swift */; };
+		99B633A7209ECD4800FE2E9E /* ListJokesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633A5209ECD4800FE2E9E /* ListJokesController.swift */; };
+		99B633A8209ECD4800FE2E9E /* ListJokesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B633A6209ECD4800FE2E9E /* ListJokesController.xib */; };
+		99B633AA209ECD5D00FE2E9E /* ListJokesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633A9209ECD5D00FE2E9E /* ListJokesView.swift */; };
+		99B633AC209ECD6E00FE2E9E /* ListJokesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633AB209ECD6E00FE2E9E /* ListJokesHandler.swift */; };
+		99B633AF209ECD9100FE2E9E /* ListJokesDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633AE209ECD9100FE2E9E /* ListJokesDatasource.swift */; };
+		99B633B3209ECDBB00FE2E9E /* ListJokesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B633B1209ECDBB00FE2E9E /* ListJokesCell.swift */; };
+		99B633B4209ECDBB00FE2E9E /* ListJokesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B633B2209ECDBB00FE2E9E /* ListJokesCell.xib */; };
 		B94ADA411AC4F9F25EEB4734 /* Pods_CodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56CC8C4F2D71F8BC0A419DD /* Pods_CodingChallenge.framework */; };
 		C304069D4B66148B4B52F98B /* Pods_CodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B56CB5010458B3F2E185A91 /* Pods_CodingChallengeTests.framework */; };
 /* End PBXBuildFile section */
@@ -83,6 +94,17 @@
 		99B63376209E40B200FE2E9E /* ApplicationStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationStrings.swift; sourceTree = "<group>"; };
 		99B63378209E40B200FE2E9E /* ApplicationBarButtonItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationBarButtonItems.swift; sourceTree = "<group>"; };
 		99B6337C209E40B200FE2E9E /* ApplicationDates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationDates.swift; sourceTree = "<group>"; };
+		99B63397209EC87A00FE2E9E /* SelectNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNameController.swift; sourceTree = "<group>"; };
+		99B63398209EC87A00FE2E9E /* SelectNameController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectNameController.xib; sourceTree = "<group>"; };
+		99B6339B209EC89300FE2E9E /* SelectNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNameView.swift; sourceTree = "<group>"; };
+		99B6339D209ECA0000FE2E9E /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
+		99B633A5209ECD4800FE2E9E /* ListJokesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJokesController.swift; sourceTree = "<group>"; };
+		99B633A6209ECD4800FE2E9E /* ListJokesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListJokesController.xib; sourceTree = "<group>"; };
+		99B633A9209ECD5D00FE2E9E /* ListJokesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJokesView.swift; sourceTree = "<group>"; };
+		99B633AB209ECD6E00FE2E9E /* ListJokesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJokesHandler.swift; sourceTree = "<group>"; };
+		99B633AE209ECD9100FE2E9E /* ListJokesDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJokesDatasource.swift; sourceTree = "<group>"; };
+		99B633B1209ECDBB00FE2E9E /* ListJokesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJokesCell.swift; sourceTree = "<group>"; };
+		99B633B2209ECDBB00FE2E9E /* ListJokesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListJokesCell.xib; sourceTree = "<group>"; };
 		A56CC8C4F2D71F8BC0A419DD /* Pods_CodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02D7BCF4B7F1D613798C31D /* Pods-CodingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodingChallengeTests/Pods-CodingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		F203E477B51064E374ABE684 /* Pods-CodingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodingChallengeTests/Pods-CodingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -235,6 +257,8 @@
 		99B6333B209E3BB600FE2E9E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				99B633A0209ECD0200FE2E9E /* ListJokesController */,
+				99B6339F209ECCF400FE2E9E /* SelectNameController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -259,6 +283,7 @@
 		99B63345209E404C00FE2E9E /* AppNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				99B6339D209ECA0000FE2E9E /* AppNavigation.swift */,
 			);
 			path = AppNavigation;
 			sourceTree = "<group>";
@@ -395,6 +420,94 @@
 			path = NSDate;
 			sourceTree = "<group>";
 		};
+		99B63394209EC81C00FE2E9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99B63397209EC87A00FE2E9E /* SelectNameController.swift */,
+				99B63398209EC87A00FE2E9E /* SelectNameController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		99B63395209EC82E00FE2E9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99B6339B209EC89300FE2E9E /* SelectNameView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		99B6339F209ECCF400FE2E9E /* SelectNameController */ = {
+			isa = PBXGroup;
+			children = (
+				99B63395209EC82E00FE2E9E /* View */,
+				99B63394209EC81C00FE2E9E /* Controller */,
+			);
+			path = SelectNameController;
+			sourceTree = "<group>";
+		};
+		99B633A0209ECD0200FE2E9E /* ListJokesController */ = {
+			isa = PBXGroup;
+			children = (
+				99B633A4209ECD3700FE2E9E /* Handler */,
+				99B633A3209ECD2D00FE2E9E /* Datasource */,
+				99B633A2209ECD2800FE2E9E /* View */,
+				99B633A1209ECD2100FE2E9E /* Controller */,
+			);
+			path = ListJokesController;
+			sourceTree = "<group>";
+		};
+		99B633A1209ECD2100FE2E9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99B633A5209ECD4800FE2E9E /* ListJokesController.swift */,
+				99B633A6209ECD4800FE2E9E /* ListJokesController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		99B633A2209ECD2800FE2E9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99B633A9209ECD5D00FE2E9E /* ListJokesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		99B633A3209ECD2D00FE2E9E /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				99B633B0209ECD9900FE2E9E /* CustomCells */,
+				99B633AD209ECD7B00FE2E9E /* DatasourceDelegate */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		99B633A4209ECD3700FE2E9E /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				99B633AB209ECD6E00FE2E9E /* ListJokesHandler.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		99B633AD209ECD7B00FE2E9E /* DatasourceDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				99B633AE209ECD9100FE2E9E /* ListJokesDatasource.swift */,
+			);
+			path = DatasourceDelegate;
+			sourceTree = "<group>";
+		};
+		99B633B0209ECD9900FE2E9E /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				99B633B1209ECDBB00FE2E9E /* ListJokesCell.swift */,
+				99B633B2209ECDBB00FE2E9E /* ListJokesCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		FCBB77989622BD52572C3331 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,10 +626,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B633A8209ECD4800FE2E9E /* ListJokesController.xib in Resources */,
+				99B6339A209EC87A00FE2E9E /* SelectNameController.xib in Resources */,
 				99B63340209E3BB600FE2E9E /* LaunchScreen.storyboard in Resources */,
 				99B63341209E3BB600FE2E9E /* Main.storyboard in Resources */,
 				99B63343209E3BB600FE2E9E /* Assets.xcassets in Resources */,
 				99B63342209E3BB600FE2E9E /* Info.plist in Resources */,
+				99B633B4209ECDBB00FE2E9E /* ListJokesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,18 +737,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				99B63393209E40B200FE2E9E /* ApplicationDates.swift in Sources */,
+				99B633AA209ECD5D00FE2E9E /* ListJokesView.swift in Sources */,
 				99B63385209E40B200FE2E9E /* DateFormatter.swift in Sources */,
 				99B63391209E40B200FE2E9E /* ApplicationBarButtonItems.swift in Sources */,
 				99B63344209E3BB600FE2E9E /* AppDelegate.swift in Sources */,
 				99B6338A209E40B200FE2E9E /* NSLayouts.swift in Sources */,
+				99B633AC209ECD6E00FE2E9E /* ListJokesHandler.swift in Sources */,
 				99B63390209E40B200FE2E9E /* ApplicationStrings.swift in Sources */,
 				99B63386209E40B200FE2E9E /* ApplicationButtons.swift in Sources */,
+				99B633AF209ECD9100FE2E9E /* ListJokesDatasource.swift in Sources */,
+				99B6339C209EC89300FE2E9E /* SelectNameView.swift in Sources */,
 				99B6338E209E40B200FE2E9E /* ApplicationReachability.swift in Sources */,
+				99B633A7209ECD4800FE2E9E /* ListJokesController.swift in Sources */,
 				99B6338C209E40B200FE2E9E /* UIDevice.swift in Sources */,
 				99B63387209E40B200FE2E9E /* ApplicationColors.swift in Sources */,
+				99B63399209EC87A00FE2E9E /* SelectNameController.swift in Sources */,
+				99B633B3209ECDBB00FE2E9E /* ListJokesCell.swift in Sources */,
 				99B6333F209E3BB600FE2E9E /* CodingChallenge.xcdatamodeld in Sources */,
 				99B6337D209E40B200FE2E9E /* ApplicationConstants.swift in Sources */,
 				99B63388209E40B200FE2E9E /* NavigationTitleView.swift in Sources */,
+				99B6339E209ECA0000FE2E9E /* AppNavigation.swift in Sources */,
 				99B6338F209E40B200FE2E9E /* NVActivityIndicator.swift in Sources */,
 				99B63389209E40B200FE2E9E /* ApplicationFonts.swift in Sources */,
 			);

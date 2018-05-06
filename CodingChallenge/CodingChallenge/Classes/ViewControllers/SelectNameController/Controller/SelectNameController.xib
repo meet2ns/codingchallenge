@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectNameController" customModule="CodingChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="selectNameView" destination="i5M-Pr-FkT" id="PP5-EC-8nR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="SelectNameView" customModule="CodingChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EMe-1t-0XH">
+                    <rect key="frame" x="20" y="286.5" width="335" height="34"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXC-Zx-8SL">
+                    <rect key="frame" x="20" y="338.5" width="335" height="34"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8o5-Ap-2M5">
+                    <rect key="frame" x="20" y="390.5" width="335" height="34"/>
+                    <color key="backgroundColor" red="0.63529411759999999" green="0.81568627449999997" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Submit"/>
+                    <connections>
+                        <action selector="submitTapped:" destination="-1" eventType="touchUpInside" id="2jy-za-Z2l"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EMe-1t-0XH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-30" id="3yt-dv-p4c"/>
+                <constraint firstItem="8o5-Ap-2M5" firstAttribute="width" secondItem="fXC-Zx-8SL" secondAttribute="width" id="5kK-ei-kSi"/>
+                <constraint firstItem="fXC-Zx-8SL" firstAttribute="leading" secondItem="EMe-1t-0XH" secondAttribute="leading" id="95f-HF-1R4"/>
+                <constraint firstItem="fXC-Zx-8SL" firstAttribute="top" secondItem="EMe-1t-0XH" secondAttribute="bottom" constant="18" id="BD9-Mq-zQG"/>
+                <constraint firstItem="EMe-1t-0XH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="GXS-L2-cue"/>
+                <constraint firstItem="8o5-Ap-2M5" firstAttribute="top" secondItem="fXC-Zx-8SL" secondAttribute="bottom" constant="18" id="R9o-k0-zRd"/>
+                <constraint firstItem="fXC-Zx-8SL" firstAttribute="height" secondItem="EMe-1t-0XH" secondAttribute="height" id="ekp-p1-lAn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EMe-1t-0XH" secondAttribute="trailing" constant="20" id="jS1-Gk-1Fa"/>
+                <constraint firstItem="8o5-Ap-2M5" firstAttribute="height" secondItem="fXC-Zx-8SL" secondAttribute="height" id="mK1-Mf-sWB"/>
+                <constraint firstItem="fXC-Zx-8SL" firstAttribute="width" secondItem="EMe-1t-0XH" secondAttribute="width" id="qtD-eW-02b"/>
+                <constraint firstItem="8o5-Ap-2M5" firstAttribute="trailing" secondItem="fXC-Zx-8SL" secondAttribute="trailing" id="rgq-db-okS"/>
+                <constraint firstItem="8o5-Ap-2M5" firstAttribute="leading" secondItem="fXC-Zx-8SL" secondAttribute="leading" id="se1-WK-ZAJ"/>
+                <constraint firstItem="fXC-Zx-8SL" firstAttribute="trailing" secondItem="EMe-1t-0XH" secondAttribute="trailing" id="vE7-gx-e2B"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outlet property="firstNameField" destination="EMe-1t-0XH" id="tQ4-iX-3F6"/>
+                <outlet property="lastNameField" destination="fXC-Zx-8SL" id="pFp-tJ-oPa"/>
+                <outlet property="submitButton" destination="8o5-Ap-2M5" id="vm3-aa-iLt"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

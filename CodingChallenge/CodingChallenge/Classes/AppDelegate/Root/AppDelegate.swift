@@ -13,10 +13,18 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    //MARK: Shared Instance
+    class func sharedInstance ()-> AppDelegate?{
+        let sharedInstance = {
+            UIApplication.shared.delegate as? AppDelegate
+        }()
+        
+        return sharedInstance;
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.moveToSelectUserNameView()
         return true
     }
 
