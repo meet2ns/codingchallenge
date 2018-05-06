@@ -15,6 +15,9 @@ class ListJokesController: UIViewController {
     var firstName: String!
     var lastName: String!
     
+    var count = 0
+    
+    
     // MARK: Instance Variables
     var handler: ListJokesHandler!
     
@@ -24,7 +27,7 @@ class ListJokesController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.configureHandler()
-        self.processRequest()
+        self.processRequest(countVal: 0)
         
         self.configureDataSource()
         self.configureCallbacks()
@@ -40,21 +43,28 @@ class ListJokesController: UIViewController {
         self.handler = ListJokesHandler(viewController: self)
     }
     
-    func processRequest() -> Void {
-        
-        for  var i in (0..<10){
-            DispatchQueue.global(qos: .background).async {
-                // Background Thread
-                self.handler.requestFetchingJokesAPI(firstName: self.firstName, lastName: self.lastName)
-
-                DispatchQueue.main.async {
-                    // Run UI Updates
-//                    self.listJokesView.tableView.reloadData()
-                }
-            }
-
+    
+    func processRequest(countVal: Int) -> Void {
+     
+        if countVal < 10{
+            
+            processAPIRequest()
+            var tempCount = countVal
+            tempCount = tempCount+1
+            processRequest(countVal:tempCount)
+        }
+        else{
+            return
         }
         
+    }
+    
+    
+    fileprivate func processAPIRequest() -> Void {
+        DispatchQueue.global(qos: .background).async {
+            // Background Thread
+            self.handler.requestFetchingJokesAPI(firstName: self.firstName, lastName: self.lastName)
+        }
     }
     
     
@@ -62,7 +72,7 @@ class ListJokesController: UIViewController {
     func configureDataSource() {
         self.listJokesView.initializeNibsForTableView()
         
-        self.listJokesView.tableView.estimatedRowHeight = 70
+        self.listJokesView.tableView.estimatedRowHeight = 44
         self.listJokesView.tableView.rowHeight = UITableViewAutomaticDimension
         
         self.listJokesView.listJokesDataSource = ListJokesDatasource()
