@@ -11,6 +11,17 @@ import UIKit
 
 extension UIView {
     
+    
+    func addDropShadow(shadowView: UIView,color: UIColor, backgroundColor: UIColor, opacity: Float = 0.9, offSet: CGSize, radius: CGFloat = 5, scale: Bool = true) {
+        
+        self.center = shadowView.center
+        self.backgroundColor = backgroundColor
+        layer.shadowColor = color.cgColor
+        layer.shadowOpacity = opacity
+        layer.shadowOffset = CGSize.zero
+        layer.shadowRadius = radius
+    }
+    
     class func barTitle(title:String, subtitle:String)-> UIView{
         
         let titleLabel = UILabel(frame: CGRect(x: 0, y: -2, width: 0, height: 0))

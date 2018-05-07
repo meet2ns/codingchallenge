@@ -6,6 +6,7 @@ PODS:
   - NVActivityIndicatorView (4.2.0):
     - NVActivityIndicatorView/Presenter (= 4.2.0)
   - NVActivityIndicatorView/Presenter (4.2.0)
+  - ReachabilitySwift (4.1.0)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
@@ -13,6 +14,7 @@ DEPENDENCIES:
   - Crashlytics
   - Fabric
   - NVActivityIndicatorView
+  - ReachabilitySwift
   - SwiftyJSON
 
 SPEC REPOS:
@@ -21,6 +23,7 @@ SPEC REPOS:
     - Crashlytics
     - Fabric
     - NVActivityIndicatorView
+    - ReachabilitySwift
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -28,8 +31,9 @@ SPEC CHECKSUMS:
   Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
   Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
   NVActivityIndicatorView: 75c9634073e03b31d7e2748cd2417feab1206195
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: abce91f341df27f1cf90a843b01a4ee7dff35de9
+PODFILE CHECKSUM: 00a25de22537ace2e32bd82ab633dd52a8c45ab0
 
 COCOAPODS: 1.5.0

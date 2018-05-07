@@ -12,6 +12,7 @@ target 'CodingChallenge' do
     pod 'SwiftyJSON'
     pod 'Alamofire', '~> 4.5'
     pod 'NVActivityIndicatorView'
+    pod 'ReachabilitySwift'
 
   target 'CodingChallengeTests' do
     inherit! :search_paths

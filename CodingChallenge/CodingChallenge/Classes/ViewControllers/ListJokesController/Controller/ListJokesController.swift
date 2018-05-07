@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Reachability
 
 class ListJokesController: UIViewController {
 
@@ -27,7 +28,8 @@ class ListJokesController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.configureHandler()
-        self.processRequest(countVal: 0)
+
+        self.checkInternetConnectivity()
         
         self.configureDataSource()
         self.configureCallbacks()
@@ -44,14 +46,23 @@ class ListJokesController: UIViewController {
     }
     
     
+    //MARK: Process Internet Connectivity
+    func checkInternetConnectivity() -> Void {
+        if Reachability()!.connection != .none {
+            self.startAnimating()
+            self.processRequest(countVal: 0)
+        }
+        else{
+            AppDelegate.sharedInstance()?.showAlert(title: ApplicationAlertMessages.kAlertTitle, message: ApplicationAlertMessages.kAlertInternetNotAvailableTitle)
+        }
+    }
+    
+    //MARK: Process Request
     func processRequest(countVal: Int) -> Void {
-     
         if countVal < 10{
-            
             processAPIRequest()
-            var tempCount = countVal
-            tempCount = tempCount+1
-            processRequest(countVal:tempCount)
+           let newCountVal = self.getCountValueForAPIRequest(currentCount: countVal)
+            processRequest(countVal:newCountVal)
         }
         else{
             return
@@ -59,6 +70,9 @@ class ListJokesController: UIViewController {
         
     }
     
+    fileprivate func getCountValueForAPIRequest(currentCount: Int)-> Int{
+        return currentCount+1
+    }
     
     fileprivate func processAPIRequest() -> Void {
         DispatchQueue.global(qos: .background).async {
@@ -68,7 +82,7 @@ class ListJokesController: UIViewController {
     }
     
     
-    //MARK: configure DataSource
+    //MARK: configure Table DataSource
     func configureDataSource() {
         self.listJokesView.initializeNibsForTableView()
         
@@ -82,19 +96,6 @@ class ListJokesController: UIViewController {
 
         self.listJokesView.tableView.tableFooterView = UIView.init(frame: CGRect.zero)
         
-    }
-    
-    
-    func handleSelectedRowCallback(index: Int) -> Void {
-        switch index {
-      
-        case 0:
-            break
-            
-        default:
-            break
-            
-        }
     }
     
     
@@ -113,7 +114,7 @@ class ListJokesController: UIViewController {
         }
     }
     
-    func handleSuccessfulFetchingJokesFRomAPI(jokesObject: JokesRootResponse!) {
+    private func handleSuccessfulFetchingJokesFRomAPI(jokesObject: JokesRootResponse!) {
         self.stopAnimating()
         AppDelegate.sharedInstance()?.jokesArray.add(jokesObject)
         self.listJokesView.tableView.reloadData()
@@ -124,4 +125,15 @@ class ListJokesController: UIViewController {
         AppDelegate.sharedInstance()?.showAlert(title: ApplicationAlertMessages.kAlertTitle, message: error.localizedDescription)
     }
 
+    private func handleSelectedRowCallback(index: Int) -> Void {
+        switch index {
+            
+        case 0:
+            break
+            
+        default:
+            break
+            
+        }
+    }
 }

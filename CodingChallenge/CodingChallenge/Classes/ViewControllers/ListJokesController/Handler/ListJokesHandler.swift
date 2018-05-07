@@ -32,6 +32,7 @@ class ListJokesHandler: NSObject {
     
     private func handleFetchingRandomJokesAPIRequest(firstName: String, lastName: String) -> Void {
         
+        
         let apiOperation: GetAllJokesOperation = GetAllJokesOperation()
         
         apiOperation.firstName = firstName
