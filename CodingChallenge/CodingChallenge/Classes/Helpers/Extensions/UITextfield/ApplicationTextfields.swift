@@ -11,20 +11,7 @@ import UIKit
 import QuartzCore
 
 extension UITextField {
-    func configure(backgroundColor: UIColor, borderColor: UIColor, textColor: UIColor, borderWidth: CGFloat, corners:UIRectCorner, cornerRadius: CGFloat) -> Void {
-        
-        self.backgroundColor = backgroundColor
-        
-        self.textColor = textColor
-        
-        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: CGFloat(ApplicationNumberConstants.kTextfieldLeftPadding), height: self.frame.height))
-        self.leftViewMode = .always
-
-        self.layer.borderWidth = borderWidth;
-        self.layer.borderColor = borderColor.cgColor
-        self.layer.cornerRadius = cornerRadius;
-        self.layer.masksToBounds = true;
-    }
+   
     
     func setLeftPaddingPoints(_ amount:CGFloat){
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))

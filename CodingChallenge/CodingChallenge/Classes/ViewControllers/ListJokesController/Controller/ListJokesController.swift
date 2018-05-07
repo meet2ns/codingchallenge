@@ -29,6 +29,7 @@ class ListJokesController: UIViewController {
         
         self.configureHandler()
 
+        self.configureNavigationBar()
         self.checkInternetConnectivity()
         
         self.configureDataSource()
@@ -45,6 +46,16 @@ class ListJokesController: UIViewController {
         self.handler = ListJokesHandler(viewController: self)
     }
     
+    //MARK: BAR Buttons
+    func configureNavigationBar() -> Void {
+        self.title = "Joke's Listing"
+        let menuImage : UIImage = UIImage(named: "back")!
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.barButton(image: menuImage, target: self, action: #selector(backButtonTapped))
+        
+    }
+    @objc func backButtonTapped() {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     //MARK: Process Internet Connectivity
     func checkInternetConnectivity() -> Void {

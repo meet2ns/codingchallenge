@@ -14,6 +14,10 @@ class SelectNameView: UIView {
     @IBOutlet weak var lastNameField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
     
+    func configureTextFieldsLayout() -> Void {
+        self.firstNameField.updateTextFieldLayoutWithOnlyBottomBorderSize(borderWidth: 1.0, borderColor: UIColor.lightGray, textField: self.firstNameField)
+        self.lastNameField.updateTextFieldLayoutWithOnlyBottomBorderSize(borderWidth: 1.0, borderColor: UIColor.lightGray, textField: self.lastNameField)
+    }
     
     func validateFieldsData() -> Bool {
         if !self.firstNameField.hasText{

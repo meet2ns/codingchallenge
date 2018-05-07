@@ -12,7 +12,7 @@ import UIKit
 extension UIView {
     
     
-    func addDropShadow(shadowView: UIView,color: UIColor, backgroundColor: UIColor, opacity: Float = 0.9, offSet: CGSize, radius: CGFloat = 5, scale: Bool = true) {
+    func addDropShadow(shadowView: UIView,color: UIColor, backgroundColor: UIColor, opacity: Float = 0.6, offSet: CGSize, radius: CGFloat = 5, scale: Bool = true) {
         
         self.center = shadowView.center
         self.backgroundColor = backgroundColor

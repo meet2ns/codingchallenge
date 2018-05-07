@@ -13,6 +13,7 @@ target 'CodingChallenge' do
     pod 'Alamofire', '~> 4.5'
     pod 'NVActivityIndicatorView'
     pod 'ReachabilitySwift'
+    pod 'IQKeyboardManagerSwift'
 
   target 'CodingChallengeTests' do
     inherit! :search_paths
@@ -25,3 +26,4 @@ target 'CodingChallenge' do
   end
 
 end
+

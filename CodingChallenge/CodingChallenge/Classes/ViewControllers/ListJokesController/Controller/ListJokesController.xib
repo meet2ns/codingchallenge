@@ -22,21 +22,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2CS-10-WIB">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="80" width="375" height="567"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="2CS-10-WIB" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Iol-hQ-rZ6"/>
+                <constraint firstItem="2CS-10-WIB" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-20" id="Iol-hQ-rZ6"/>
                 <constraint firstItem="2CS-10-WIB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="L2R-vW-aeJ"/>
-                <constraint firstItem="2CS-10-WIB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Y1E-UC-PpK"/>
+                <constraint firstItem="2CS-10-WIB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="Y1E-UC-PpK"/>
                 <constraint firstItem="2CS-10-WIB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YrB-IR-2Gq"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <connections>
                 <outlet property="tableView" destination="2CS-10-WIB" id="A2E-Y3-8ZJ"/>
             </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
 </document>

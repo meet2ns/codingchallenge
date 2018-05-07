@@ -15,8 +15,8 @@ class ListJokesCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.parentView.addDropShadow(shadowView: self, color: UIColor.black, backgroundColor: UIColor.white, offSet: CGSize.zero)
-        self.parentView.layer.cornerRadius = 10.0
+        self.parentView.addDropShadow(shadowView: self, color: UIColor.lightGray, backgroundColor: UIColor.white, offSet: CGSize.zero)
+        self.parentView.layer.cornerRadius = 4
 
     }
 

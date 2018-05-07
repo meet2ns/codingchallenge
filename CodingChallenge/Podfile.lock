@@ -3,6 +3,7 @@ PODS:
   - Crashlytics (3.10.1):
     - Fabric (~> 1.7.5)
   - Fabric (1.7.6)
+  - IQKeyboardManagerSwift (5.0.8)
   - NVActivityIndicatorView (4.2.0):
     - NVActivityIndicatorView/Presenter (= 4.2.0)
   - NVActivityIndicatorView/Presenter (4.2.0)
@@ -13,6 +14,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.5)
   - Crashlytics
   - Fabric
+  - IQKeyboardManagerSwift
   - NVActivityIndicatorView
   - ReachabilitySwift
   - SwiftyJSON
@@ -22,6 +24,7 @@ SPEC REPOS:
     - Alamofire
     - Crashlytics
     - Fabric
+    - IQKeyboardManagerSwift
     - NVActivityIndicatorView
     - ReachabilitySwift
     - SwiftyJSON
@@ -30,10 +33,11 @@ SPEC CHECKSUMS:
   Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
   Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
   Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
+  IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
   NVActivityIndicatorView: 75c9634073e03b31d7e2748cd2417feab1206195
   ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 00a25de22537ace2e32bd82ab633dd52a8c45ab0
+PODFILE CHECKSUM: c99344f447a17ddaef97272f3410c6844b28bd67
 
 COCOAPODS: 1.5.0
